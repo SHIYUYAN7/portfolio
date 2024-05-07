@@ -1,33 +1,42 @@
 window.addEventListener('DOMContentLoaded', (event) => {
-    const homeButton = document.getElementById('homeButton');
+    const introButton = document.getElementById('introButton');
     const workButton = document.getElementById('workButton');
     const experienceButton = document.getElementById('experienceButton');
-    const homeDiv = document.getElementById('home');
+    const introDiv = document.getElementById('intro');
     const workDiv = document.getElementById('work');
     const experienceDiv = document.getElementById('experience');
 
+    const exploreButton = document.getElementById('exploreButton');
+
     // Set default display to 'home'
-    homeDiv.style.display = 'flex';
+    introDiv.style.display = 'flex';
     workDiv.style.display = 'none';
     experienceDiv.style.display = 'none';
 
+    // Explore Button
+    exploreButton.addEventListener('click', function() {
+        introDiv.style.display = 'none';
+        workDiv.style.display = 'flex';
+        experienceDiv.style.display = 'none';
+    });
+
     // Home
-    homeButton.addEventListener('click', function() {
-        homeDiv.style.display = 'flex';
+    introButton.addEventListener('click', function() {
+        introDiv.style.display = 'flex';
         workDiv.style.display = 'none';
         experienceDiv.style.display = 'none';
     });
 
     // Work
     workButton.addEventListener('click', function() {
-        homeDiv.style.display = 'none';
+        introDiv.style.display = 'none';
         workDiv.style.display = 'flex';
         experienceDiv.style.display = 'none';
     });
 
     // Experience
     experienceButton.addEventListener('click', function() {
-        homeDiv.style.display = 'none';
+        introDiv.style.display = 'none';
         experienceDiv.style.display = 'flex';
         workDiv.style.display = 'none';
     });

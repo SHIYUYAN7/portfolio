@@ -1,33 +1,63 @@
-/* -----------------------------home----------------------------- */
-.home-container {
+/* -----------------------------intro----------------------------- */
+.intro-container {
     width: 100%;
     height: 100vh; /* full screen as 100% (plus header) */
     
-
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.home-box{
+.intro-box{
     width: 60%;
-    height: 30%;
+    height: 40%;
 }
 
-.home-title {
+.intro-title {
     font-size: 4vw; 
     color: #000;
 }
 
-.home-description {
+.intro-description {
     font-size: 1.6vw; /* Slightly larger font size */
     color: #666;
     margin-top: 20px;
 }
 
-.home-description a {
+.intro-description a {
     color: #FF2B6D;
     text-decoration: none;
 }
 
+.intro-description a:hover {
+    border-bottom: 2.5px solid #FF2B6D;
+}
+
+.intro-contact img {
+    width: 2.5vw; 
+    height: 100%; 
+    margin-right: 0.5vw;
+    margin-top: 1.5vw;
+}
+
+.explore-button {
+    margin: 7% auto;
+    width: 18%;
+    padding: 0.5vw 1vw;
+    font-size: 1.5vw;
+    background-color: #FF2B6D;
+    color: white;
+
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    text-align: center;
+
+    transition: transform 0.3s ease;
+}
+
+.explore-button:hover {
+    transform: scale(1.1);
+}
 
