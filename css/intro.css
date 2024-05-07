@@ -1,0 +1,33 @@
+/* -----------------------------home----------------------------- */
+.home-container {
+    width: 100%;
+    height: 100vh; /* full screen as 100% (plus header) */
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-box{
+    width: 60%;
+    height: 30%;
+}
+
+.home-title {
+    font-size: 4vw; 
+    color: #000;
+}
+
+.home-description {
+    font-size: 1.6vw; /* Slightly larger font size */
+    color: #666;
+    margin-top: 20px;
+}
+
+.home-description a {
+    color: #FF2B6D;
+    text-decoration: none;
+}
+
+
