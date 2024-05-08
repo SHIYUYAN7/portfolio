@@ -9,7 +9,19 @@ body, html {
     /* set whole page to same font family */
     font-family: "Noto Serif", serif;
 
-    overflow: hidden;
+    overflow: auto;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE 10+ */
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    background: transparent; /* Chrome, Safari */
+}
+
+body::-ms-scrollbar {
+    display: none; /* IE and Edge */
 }
 
 /* -----------------------------header----------------------------- */
