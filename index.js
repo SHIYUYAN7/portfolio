@@ -9,8 +9,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
     const exploreButton = document.getElementById('exploreButton');
 
     // Set default display to 'home'
-    introDiv.style.display = 'flex';
-    workDiv.style.display = 'none';
+    introDiv.style.display = 'none';
+    workDiv.style.display = 'flex';
     experienceDiv.style.display = 'none';
 
     // Explore Button

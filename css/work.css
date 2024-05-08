@@ -6,4 +6,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    
+    .work-box{
+        width: 90%;
+        height: 100%;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; 
+        margin: auto;
+        margin-top: 10%; 
+    }
+
+    .card {
+        width: 500px;
+        height: 400px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        margin: 2vw;
+    }
 }
+
