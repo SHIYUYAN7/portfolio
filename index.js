@@ -30,7 +30,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     }
 
     // Set default display to 'intro'
-    showSection('introDiv');
+    showSection('cryptoDiv');
 
     // Header buttons
     buttons.introButton.addEventListener('click', () => showSection('introDiv'));

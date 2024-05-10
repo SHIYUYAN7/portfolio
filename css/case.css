@@ -58,19 +58,19 @@
     }
 
     .case-skills-item {
-        background-color: #fff; /* Light grey background */
-        border: 1.2px solid #FF2B6D; /* Pink border */
-        border-radius: 4px; /* Rounded corners */
+        background-color: #fff; 
+        border: 1.2px solid #FF2B6D; 
+        border-radius: 4px; 
         padding: 0.25vw 0.5vw;
         font-size: 1vw;
-        text-align: center; /* Center the text */
-        color: #FF2B6D; /* Dark grey text color for contrast */
+        text-align: center; 
+        color: #FF2B6D; 
         transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transformation and shadow on hover */
     }
     
     .case-skills-item:hover {
         background-color: #FF2B6D; /* Change background to pink on hover */
-        color: #fff; /* Change text color to white on hover for better readability */
+        color: #fff; 
         transform: scale(1.05); /* Slightly increase size on hover for a dynamic effect */
     }
 
@@ -138,7 +138,52 @@
         object-fit: contain;
     }
     
+    /* ------------------------------------table------------------------------------ */
+    table {
+        margin: 0 auto;
+        width: 80%;
+        border-collapse: collapse;
+    }
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+        font-size: 2vmin;
+    }
 
+    th {
+        background-color: #f2f2f2;
+        font-size: 2vmin;
+    }
+    
+    .no-functionality {
+        text-align: center;
+        color: #FF2B6D;
+        font-weight: bold;
+        font-size: 2vmin;
+    }
+
+    /* ------------------------------------list------------------------------------ */
+    .features-list {
+        width: 70%;
+        list-style: none; 
+        padding: 0; 
+        margin: 20px auto; 
+    }
+    
+    .feature-item {
+        background-color: #f8f8f8; 
+        border: 1px solid #ddd;
+        padding: 1vh 0.7vw; 
+        margin-bottom: 0.8vh;
+        border-radius: 5px; 
+        font-size: 0.8vw; 
+    }
+    
+    .feature-item strong {
+        color: #333; 
+        font-weight: bold; 
+    }
 
 
 }
