@@ -1,122 +1,48 @@
 window.addEventListener('DOMContentLoaded', (event) => {
-    // header button
-    const introButton = document.getElementById('introButton');
-    const workButton = document.getElementById('workButton');
-    const photographyButton = document.getElementById('photographyButton');
-    const aboutButton = document.getElementById('aboutButton');
+    
+    const buttons = {
+        // header buttons
+        introButton: document.getElementById('introButton'),
+        workButton: document.getElementById('workButton'),
+        photographyButton: document.getElementById('photographyButton'),
+        aboutButton: document.getElementById('aboutButton'),
+        exploreButton: document.getElementById('exploreButton'),
+        // work page card buttons
+        photographyCard: document.getElementById('photography-card'),
+        responsiveCard: document.getElementById('responsive-card'),
+        cryptoCard: document.getElementById('crypto-card')
+    };
 
     // main content
-    const introDiv = document.getElementById('intro');
-    const workDiv = document.getElementById('work');
-    const photographyDiv = document.getElementById('photography');
-    const aboutDiv = document.getElementById('about');
-    const responsiveDiv = document.getElementById('responsive-case');
-    const cryptoDiv = document.getElementById('crypto-case'); 
+    const sections = {
+        introDiv: document.getElementById('intro'),
+        workDiv: document.getElementById('work'),
+        photographyDiv: document.getElementById('photography'),
+        aboutDiv: document.getElementById('about'),
+        responsiveDiv: document.getElementById('responsive-case'),
+        cryptoDiv: document.getElementById('crypto-case')
+    };
 
-    // intro content button cick to work
-    const exploreButton = document.getElementById('exploreButton');
-
-    // work content button cick to details
-    const photographyCard = document.getElementById('photography-card');
-    const responsiveCard = document.getElementById('responsive-card');
-    const cryptoCard = document.getElementById('crypto-card');
-
-    // Set default display to 'home'
-    introDiv.style.display = 'none';
-    workDiv.style.display = 'none';
-    photographyDiv.style.display = 'none';
-    aboutDiv.style.display = 'none';
-    responsiveDiv.style.display = 'flex';
-    cryptoDiv.style.display = 'none';
-
-    // Explore Button
-    exploreButton.addEventListener('click', function() {
-        introDiv.style.display = 'none';
-        workDiv.style.display = 'flex';
-        photographyDiv.style.display = 'none';
-        aboutDiv.style.display = 'none';
-        responsiveDiv.style.display = 'none';
-        cryptoDiv.style.display = 'none';
-    });
-
-    // ------------------------------------------work page card buttons------------------------------------------
-    
-    // responsive-card Button
-    responsiveCard.addEventListener('click', function() {
-        introDiv.style.display = 'none';
-        workDiv.style.display = 'none';
-        photographyDiv.style.display = 'none';
-        aboutDiv.style.display = 'none';
-        responsiveDiv.style.display = 'flex';
-        cryptoDiv.style.display = 'none';
-    });
-
-    // photography-card Button
-    photographyCard.addEventListener('click', function() {
-        introDiv.style.display = 'none';
-        workDiv.style.display = 'none';
-        photographyDiv.style.display = 'flex';
-        aboutDiv.style.display = 'none';
-        responsiveDiv.style.display = 'none';
-        cryptoDiv.style.display = 'none';
-    });
-
-    // crypto-card Button
-    cryptoCard.addEventListener('click', function() {
-        introDiv.style.display = 'none';
-        workDiv.style.display = 'none';
-        photographyDiv.style.display = 'none';
-        aboutDiv.style.display = 'none';
-        responsiveDiv.style.display = 'none';
-        cryptoDiv.style.display = 'flex';
-    });
-    
-
-
-    // ------------------------------------------header buttons------------------------------------------
-
-    // Home
-    introButton.addEventListener('click', function() {
-        introDiv.style.display = 'flex';
-        workDiv.style.display = 'none';
-        photographyDiv.style.display = 'none';
-        aboutDiv.style.display = 'none';
-        responsiveDiv.style.display = 'none';
-        cryptoDiv.style.display = 'none';
-    });
-
-    // Work
-    workButton.addEventListener('click', function() {
-        introDiv.style.display = 'none';
-        workDiv.style.display = 'flex';
-        photographyDiv.style.display = 'none';
-        aboutDiv.style.display = 'none';
-        responsiveDiv.style.display = 'none';
-        cryptoDiv.style.display = 'none';
-    });
-
-    // photography area
-    photographyButton.addEventListener('click', function() {
-        introDiv.style.display = 'none';
-        photographyDiv.style.display = 'flex';
-        workDiv.style.display = 'none';
-        aboutDiv.style.display = 'none';
-        responsiveDiv.style.display = 'none';
-        cryptoDiv.style.display = 'none';
-    });
-
-    // about area
-    aboutButton.addEventListener('click', function() {
-        introDiv.style.display = 'none';
-        photographyDiv.style.display = 'none';
-        workDiv.style.display = 'none';
-        aboutDiv.style.display = 'flex';
-        responsiveDiv.style.display = 'none';
-        cryptoDiv.style.display = 'none';
-    });
-
-    function setDisplay(divName){
-        
+    // Function to hide all sections and show the selected one
+    function showSection(selected) {
+        Object.values(sections).forEach(section => section.style.display = 'none');
+        sections[selected].style.display = 'flex';
     }
 
+    // Set default display to 'intro'
+    showSection('introDiv');
+
+    // Header buttons
+    buttons.introButton.addEventListener('click', () => showSection('introDiv'));
+    buttons.workButton.addEventListener('click', () => showSection('workDiv'));
+    buttons.photographyButton.addEventListener('click', () => showSection('photographyDiv'));
+    buttons.aboutButton.addEventListener('click', () => showSection('aboutDiv'));
+
+    // Explore Button
+    buttons.exploreButton.addEventListener('click', () => showSection('workDiv'));
+
+    // Work page card buttons
+    buttons.responsiveCard.addEventListener('click', () => showSection('responsiveDiv'));
+    buttons.photographyCard.addEventListener('click', () => showSection('photographyDiv'));
+    buttons.cryptoCard.addEventListener('click', () => showSection('cryptoDiv'));
 });
