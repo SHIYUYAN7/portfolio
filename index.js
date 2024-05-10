@@ -11,6 +11,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     const photographyDiv = document.getElementById('photography');
     const aboutDiv = document.getElementById('about');
     const responsiveDiv = document.getElementById('responsive-case');
+    const cryptoDiv = document.getElementById('crypto-case'); 
 
     // intro content button cick to work
     const exploreButton = document.getElementById('exploreButton');
@@ -18,6 +19,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     // work content button cick to details
     const photographyCard = document.getElementById('photography-card');
     const responsiveCard = document.getElementById('responsive-card');
+    const cryptoCard = document.getElementById('crypto-card');
 
     // Set default display to 'home'
     introDiv.style.display = 'none';
@@ -25,7 +27,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     photographyDiv.style.display = 'none';
     aboutDiv.style.display = 'none';
     responsiveDiv.style.display = 'flex';
-
+    cryptoDiv.style.display = 'none';
 
     // Explore Button
     exploreButton.addEventListener('click', function() {
@@ -34,6 +36,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         photographyDiv.style.display = 'none';
         aboutDiv.style.display = 'none';
         responsiveDiv.style.display = 'none';
+        cryptoDiv.style.display = 'none';
     });
 
     // ------------------------------------------work page card buttons------------------------------------------
@@ -45,6 +48,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         photographyDiv.style.display = 'none';
         aboutDiv.style.display = 'none';
         responsiveDiv.style.display = 'flex';
+        cryptoDiv.style.display = 'none';
     });
 
     // photography-card Button
@@ -54,6 +58,17 @@ window.addEventListener('DOMContentLoaded', (event) => {
         photographyDiv.style.display = 'flex';
         aboutDiv.style.display = 'none';
         responsiveDiv.style.display = 'none';
+        cryptoDiv.style.display = 'none';
+    });
+
+    // crypto-card Button
+    cryptoCard.addEventListener('click', function() {
+        introDiv.style.display = 'none';
+        workDiv.style.display = 'none';
+        photographyDiv.style.display = 'none';
+        aboutDiv.style.display = 'none';
+        responsiveDiv.style.display = 'none';
+        cryptoDiv.style.display = 'flex';
     });
     
 
@@ -67,6 +82,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         photographyDiv.style.display = 'none';
         aboutDiv.style.display = 'none';
         responsiveDiv.style.display = 'none';
+        cryptoDiv.style.display = 'none';
     });
 
     // Work
@@ -76,6 +92,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         photographyDiv.style.display = 'none';
         aboutDiv.style.display = 'none';
         responsiveDiv.style.display = 'none';
+        cryptoDiv.style.display = 'none';
     });
 
     // photography area
@@ -85,6 +102,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         workDiv.style.display = 'none';
         aboutDiv.style.display = 'none';
         responsiveDiv.style.display = 'none';
+        cryptoDiv.style.display = 'none';
     });
 
     // about area
@@ -94,8 +112,11 @@ window.addEventListener('DOMContentLoaded', (event) => {
         workDiv.style.display = 'none';
         aboutDiv.style.display = 'flex';
         responsiveDiv.style.display = 'none';
+        cryptoDiv.style.display = 'none';
     });
 
-
+    function setDisplay(divName){
+        
+    }
 
 });
