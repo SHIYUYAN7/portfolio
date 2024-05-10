@@ -21,10 +21,10 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
     // Set default display to 'home'
     introDiv.style.display = 'none';
-    workDiv.style.display = 'flex';
+    workDiv.style.display = 'none';
     photographyDiv.style.display = 'none';
     aboutDiv.style.display = 'none';
-    responsiveDiv.style.display = 'none';
+    responsiveDiv.style.display = 'flex';
 
 
     // Explore Button

@@ -24,6 +24,10 @@ body::-ms-scrollbar {
     display: none; /* IE and Edge */
 }
 
+footer{
+    margin-top: 5%;
+}
+
 /* -----------------------------header----------------------------- */
 .menu-bar{
     
