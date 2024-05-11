@@ -32,7 +32,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     }
 
     // Set default display to 'intro'
-    showSection('devvyDiv');
+    showSection('introDiv');
 
     // Header buttons
     buttons.introButton.addEventListener('click', () => showSection('introDiv'));
