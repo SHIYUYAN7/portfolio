@@ -168,16 +168,17 @@
         width: 70%;
         list-style: none; 
         padding: 0; 
-        margin: 20px auto; 
+        margin: 0 auto; 
+        margin-top: 2.5vh;
     }
     
     .feature-item {
         background-color: #f8f8f8; 
         border: 1px solid #ddd;
         padding: 1vh 0.7vw; 
-        margin-bottom: 0.8vh;
+        margin-top: 1vh;
         border-radius: 5px; 
-        font-size: 0.8vw; 
+        font-size: 1vw; 
     }
     
     .feature-item strong {
