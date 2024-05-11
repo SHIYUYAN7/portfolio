@@ -197,7 +197,43 @@
     
     .single-image-container img {   
         height: auto;          
-        width: 85%;        
+        width: 80%;        
+    }
+
+
+    /* ------------------------------------list------------------------------------ */
+    .gif-rows{
+        /* width: 80%; */
+        display: flex;     
+        justify-content: center; 
+        align-items: center;   
+        gap: 5vw;          
+    }
+
+    .gif-rows figure {
+        width: 22%;         
+        text-align: center; 
+        margin: 0;    
+    }  
+    
+    .gif-rows img {
+        width: 100%;   
+        height: auto;     
+    }
+    
+    .gif-rows figcaption {
+        font-size: 1vw;    
+        color: #707070;    
+        margin-top: 0.5vh;   
+    }
+
+    .case-video{
+        display: flex;
+        justify-content: center;
+    }
+
+    .case-video video{
+        width: 80%;
     }
 
 }
