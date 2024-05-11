@@ -10,7 +10,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
         // work page card buttons
         photographyCard: document.getElementById('photography-card'),
         responsiveCard: document.getElementById('responsive-card'),
-        cryptoCard: document.getElementById('crypto-card')
+        cryptoCard: document.getElementById('crypto-card'),
+        devvyCard: document.getElementById('devvy-card')
     };
 
     // main content
@@ -20,7 +21,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
         photographyDiv: document.getElementById('photography'),
         aboutDiv: document.getElementById('about'),
         responsiveDiv: document.getElementById('responsive-case'),
-        cryptoDiv: document.getElementById('crypto-case')
+        cryptoDiv: document.getElementById('crypto-case'),
+        devvyDiv: document.getElementById('devvy-case')
     };
 
     // Function to hide all sections and show the selected one
@@ -30,7 +32,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     }
 
     // Set default display to 'intro'
-    showSection('cryptoDiv');
+    showSection('devvyDiv');
 
     // Header buttons
     buttons.introButton.addEventListener('click', () => showSection('introDiv'));
@@ -45,4 +47,5 @@ window.addEventListener('DOMContentLoaded', (event) => {
     buttons.responsiveCard.addEventListener('click', () => showSection('responsiveDiv'));
     buttons.photographyCard.addEventListener('click', () => showSection('photographyDiv'));
     buttons.cryptoCard.addEventListener('click', () => showSection('cryptoDiv'));
+    buttons.devvyCard.addEventListener('click', () => showSection('devvyDiv'));
 });

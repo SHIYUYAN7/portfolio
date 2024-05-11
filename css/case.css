@@ -187,4 +187,17 @@
     }
 
 
+
+    .single-image-container {
+        display: flex;      
+        justify-content: center; 
+        align-items: center;             
+        width: 100%;          
+    }
+    
+    .single-image-container img {   
+        height: auto;          
+        width: 85%;        
+    }
+
 }
